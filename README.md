@@ -1,4 +1,4 @@
-# Crypto-razer
+# Crypto-razer - Porject by Straw Hats(Siddharth,Mehul,Shubham)
 A dapp made on Ethereum Network to support different Organizations through crypto 
 
 To test the Smart Contract go the Remix IDE and try it there .
