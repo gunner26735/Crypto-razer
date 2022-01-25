@@ -1,0 +1,342 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  margin: 0;
+  font-family: poppins;
+  background: #32327c;
+  scroll-behavior: smooth;
+}
+
+body header {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+}
+
+body header h1 {
+  width: 100px;
+  margin: 20px 120px;
+  padding: 0px 20px;
+  font-weight: black;
+  font-family: binjay;
+  letter-spacing: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+body header h1 a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: .4s all ease;
+  transition: .4s all ease;
+}
+
+body header nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body header nav ul {
+  margin: 20px 100px;
+  display: inline-block;
+}
+
+body header nav ul li {
+  padding: 10px 20px;
+  list-style: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-transition: .4s all ease;
+  transition: .4s all ease;
+}
+
+body header nav ul li a:hover {
+  color: #f1f1f1;
+}
+
+body section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+body section .right {
+  position: absolute;
+  height: 100vh;
+  width: 50%;
+  right: 0;
+}
+
+body section .right .card {
+  position: absolute;
+  top: 60px;
+  right: -10px;
+  height: 800px;
+  width: 600px;
+  background: white;
+  margin: 100px 0 0 0;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(-20px 80px 50px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(-20px 80px 50px rgba(0, 0, 0, 0.5));
+}
+
+body section .right .card table {
+  margin: 40px;
+  width: 100%;
+  display: inline-block;
+}
+
+body section .right .card table tr {
+  margin: 0 10px;
+  padding: 10px 20px;
+  list-style: none;
+  display: block;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+body section .right .card table td:nth-child(1) {
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+  width: 100%;
+  text-align: left;
+  padding: 10px 80px;
+  font-size: 20px;
+  -webkit-transition: .4s all ease;
+  transition: .4s all ease;
+}
+
+body section .right .card table tr:nth-child(odd) {
+  background: #f1f1f1;
+}
+
+body section .left {
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  margin: 10em 8em;
+}
+
+body section .left .textbkg {
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  font-size: 15em;
+  color: #5c5197;
+  font-family: binjay;
+  opacity: .3;
+  z-index: -2;
+}
+
+body section .left h1 {
+  font-family: montserrat;
+  color: #fff;
+  font-size: 4em;
+  letter-spacing: 5px;
+}
+
+body section .left h1 i {
+  letter-spacing: 0;
+  font-size: 40px;
+}
+
+body section .left .cta {
+  width: 200px;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+body section .left .cta a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #314a53;
+  font-size: 20px;
+}
+
+.scnd {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+}
+
+.scnd .card {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 10px 20px;
+  height: 500px;
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.9), 10px 10px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.9), 10px 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.scnd .card h4 {
+  position: absolute;
+  top: 10%;
+  font-size: 30px;
+}
+
+.scnd .card p {
+  text-align: left;
+  font-size: 20px;
+}
+
+.scnd .card a {
+  position: absolute;
+  top: 80%;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  padding: 10px 50px;
+  border-radius: 10px;
+  background: #32327c;
+}
+
+.scnd .card .frame {
+  position: absolute;
+  height: 500px;
+  width: 400px;
+  opacity: .2;
+  background: #32327c;
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 40% 100%, 5% 94%, 5% 5%, 89% 6%, 96% 18%, 100% 100%, 100% 0%);
+          clip-path: polygon(0% 0%, 0% 100%, 40% 100%, 5% 94%, 5% 5%, 89% 6%, 96% 18%, 100% 100%, 100% 0%);
+}
+
+.scnd .textbkg {
+  position: absolute;
+  top: 20%;
+  right: -10%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 10em;
+  color: #5c5197;
+  font-family: binjay;
+  opacity: .2;
+}
+
+.contact {
+  position: absolute;
+  top: 200%;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  font-family: poppins;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .textbkg {
+  position: absolute;
+  top: -15%;
+  font-size: 12em;
+  color: #1a0a75;
+  opacity: 1;
+  font-family: binjay;
+}
+
+.contact .shape {
+  position: absolute;
+  height: 100vh;
+  width: 20%;
+  left: 0;
+  opacity: 1;
+  background: #1a0a75;
+}
+
+.contact h1 {
+  font-size: 5vh;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.contact form input {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: montserrat;
+  cursor: pointer;
+  border: 2px solid rgba(50, 50, 124, 0.5);
+  border-radius: 5px;
+}
+
+.contact form input[type="submit"] {
+  font-weight: bold;
+  color: #fff;
+  background: #32327c;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #32327c;
+}
+/*# sourceMappingURL=style.css.map */
