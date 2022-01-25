@@ -16,11 +16,12 @@
     <link href="http://fonts.cdnfonts.com/css/binjay" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0/web3.min.js" integrity="sha512-C63V0mFzwl8KV2fRz0QJNKX0d9877urOLSUq5WUq8nUOhDl69hKdGr9mAvl57k47GNjqEMAtiufsvDnk7xs8+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <body>
 
     <header>
-        <h1><a href="./index.html">CryptoRaisers.</a></h1>
+        <h1><a href="./index.html">CryptoRazers.</a></h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Logout</a></li>
@@ -28,6 +29,29 @@
             </ul>
         </nav>
     </header>
+
+    <script>
+        const {
+            createConnection
+        } = require('mysql');
+        
+        const connection = createConnection({
+            host : 'localhost',
+            user : 'root',
+            password : '',
+            database : 'crypto_razer',
+        });
+        
+        connection.query('select * from donor', (err, result, fields) =>{
+            if(err){
+                return console.log(err);
+            }
+            return console.log(result);
+        });
+
+    </script>
+
+
     <section>
         <div class="right" id="right">
             <div class="card">
@@ -120,12 +144,12 @@
             </div>
             <img class="card-img-top" src="holder.js/100px180/" alt="">
             <div class="card-body">
-                <h4 class="card-title">Donsec Marketing.</h4>
-                <p class="card-text">Need an Amount: <b>10,000</b></p>
-                <p class="card-text">We raised: <b>4500</b></p>
+                <h4 class="card-title">Natures Wellfare</h4>
+                <p class="card-text">Need an Amount: <b>10 ETH</b></p>
+                <p class="card-text" id="raised">We raised: <b>4 ETH</b></p>
 
             </div>
-            <a href="../organzation.html">DONATE</a>
+            <a href="organzation.html">DONATE</a>
 
         </div>
         <div class="card text-left">
@@ -136,10 +160,10 @@
             <div class="card-body">
                 <h4 class="card-title">Asian Pvt. Ltd.</h4>
                 <p class="card-text">Need an Amount: <b>7,000</b></p>
-                <p class="card-text">We raised: <b>3,200</b></p>
+                <p class="card-text">We raised: <b>32 ETH</b></p>
 
             </div>
-            <a href="../organzation.html">DONATE</a>
+            <a href="organzation.html">DONATE</a>
 
         </div>
         <div class="card text-left">
@@ -150,10 +174,10 @@
             <div class="card-body">
                 <h4 class="card-title">Cooper Tyres.</h4>
                 <p class="card-text">Need an Amount: <b>5,000</b></p>
-                <p class="card-text">We raised:<b>3,700</b></p>
+                <p class="card-text">We raised:<b>37 ETH</b></p>
 
             </div>
-            <a href="../organzation.html">DONATE</a>
+            <a href="organzation.html">DONATE</a>
 
         </div>
     </section>

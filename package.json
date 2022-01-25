@@ -1,0 +1,25 @@
+{
+  "name": "Crypto-razer",
+  "version": "1.0.0",
+  "description": "A dapp made on Ethereum Network to support different Organizations through crypto",
+  "main": "date.js",
+  "dependencies": {
+    "http-server": "^14.1.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shxb7/Crypto-razer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shxb7/Crypto-razer/issues"
+  },
+  "homepage": "https://github.com/shxb7/Crypto-razer#readme"
+}
