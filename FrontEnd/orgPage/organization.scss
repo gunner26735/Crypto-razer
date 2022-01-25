@@ -1,0 +1,113 @@
+    body {
+        margin: 0;
+        font-family: poppins;
+        background: rgba(50, 50, 124, 1);
+        scroll-behavior: smooth;
+        h1 {
+            width: 100px;
+            margin: 20px 120px;
+            padding: 0px 20px;
+            font-weight: black;
+            font-family: binjay;
+            letter-spacing: 5px;
+            cursor: pointer;
+            color: #fff;
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                transition: .4s all ease;
+            }
+        }
+        nav {
+            position: absolute;
+            top: 0;
+            right: 0;
+            ul {
+                margin: 20px 100px;
+                display: inline-block;
+                li {
+                    padding: 10px 20px;
+                    list-style: none;
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: bold;
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        font-weight: bold;
+                        font-size: 20px;
+                        transition: .4s all ease;
+                    }
+                    a:hover {
+                        color: #f1f1f1;
+                    }
+                }
+            }
+        }
+        .scnd {
+            position: absolute;
+            top: 10%;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            width: 100%;
+            background: #fff;
+            .card {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin: 10px 20px;
+                height: 500px;
+                width: 400px;
+                background: #fff;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.9), 10px 10px 50px rgba(0, 0, 0, .2);
+                h4 {
+                    position: absolute;
+                    top: 10%;
+                    font-size: 30px;
+                }
+                p {
+                    text-align: left;
+                    font-size: 20px;
+                }
+                a {
+                    position: absolute;
+                    top: 80%;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: rgb(255, 255, 255);
+                    font-size: 20px;
+                    padding: 10px 50px;
+                    border-radius: 10px;
+                    background: rgb(50, 50, 124);
+                }
+                .frame {
+                    position: absolute;
+                    height: 500px;
+                    width: 400px;
+                    opacity: .2;
+                    background: rgb(50, 50, 124);
+                    clip-path: polygon(0% 0%, 0% 100%, 40% 100%, 5% 94%, 5% 5%, 89% 6%, 96% 18%, 100% 100%, 100% 0%);
+                }
+            }
+            .textbkg {
+                position: absolute;
+                top: 20%;
+                right: -10%;
+                transform: rotate(90deg);
+                font-size: 10em;
+                color: #5c5197;
+                font-family: binjay;
+                opacity: .2;
+            }
+        }
+    }

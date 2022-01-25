@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: poppins;
+  background: #32327c;
+  scroll-behavior: smooth;
+}
+
+body h1 {
+  width: 100px;
+  margin: 20px 120px;
+  padding: 0px 20px;
+  font-weight: black;
+  font-family: binjay;
+  letter-spacing: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+body h1 a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: .4s all ease;
+  transition: .4s all ease;
+}
+
+body nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body nav ul {
+  margin: 20px 100px;
+  display: inline-block;
+}
+
+body nav ul li {
+  padding: 10px 20px;
+  list-style: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-transition: .4s all ease;
+  transition: .4s all ease;
+}
+
+body nav ul li a:hover {
+  color: #f1f1f1;
+}
+
+body .scnd {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+  width: 100%;
+  background: #fff;
+}
+
+body .scnd .card {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 10px 20px;
+  height: 500px;
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.9), 10px 10px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.9), 10px 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+body .scnd .card h4 {
+  position: absolute;
+  top: 10%;
+  font-size: 30px;
+}
+
+body .scnd .card p {
+  text-align: left;
+  font-size: 20px;
+}
+
+body .scnd .card a {
+  position: absolute;
+  top: 80%;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  padding: 10px 50px;
+  border-radius: 10px;
+  background: #32327c;
+}
+
+body .scnd .card .frame {
+  position: absolute;
+  height: 500px;
+  width: 400px;
+  opacity: .2;
+  background: #32327c;
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 40% 100%, 5% 94%, 5% 5%, 89% 6%, 96% 18%, 100% 100%, 100% 0%);
+          clip-path: polygon(0% 0%, 0% 100%, 40% 100%, 5% 94%, 5% 5%, 89% 6%, 96% 18%, 100% 100%, 100% 0%);
+}
+
+body .scnd .textbkg {
+  position: absolute;
+  top: 20%;
+  right: -10%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 10em;
+  color: #5c5197;
+  font-family: binjay;
+  opacity: .2;
+}
+/*# sourceMappingURL=organization.css.map */
