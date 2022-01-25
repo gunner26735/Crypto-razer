@@ -2,10 +2,14 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>CryptoRazers</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;700;900&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/binjay" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -18,14 +22,22 @@
         <i class="fa fa-plus" id="fa" onclick="toggle()"></i>
     </div>
     <div class="vault" id="vault">
-        <h1>Add an Organization</h1>
-        <form>
-            <input type="text" id="userName" name="userName" placeholder="Enter Name of Organization" required>
-            <input type="text" id="walletAddress" name="walletAddress" placeholder="Wallet Address" required>
-            <input type="date" id="Duration" name="Duration" placeholder="Duration" required>
-            <input type="number" id="Amount" name="Amount" placeholder="Donation required" required>
-            <input type="submit" name="submit" value="Post">
-        </form>
+        <h2>Add an Organization</h2>
+        <div class="container">
+            <form name="form" id="form" action="/" method="GET">
+                <span class="error" id="userError" style="color: rgb(255, 80, 80); text-align: center;">&nbsp;</span>
+                <input type="text" id="OranizationName" name="OranizationName" placeholder="Oranization Name">
+                <span class="error" id="userError" style="color: rgb(255, 80, 80); text-align: center;">&nbsp;</span>
+                <input type="text" id="Description" name="Description" placeholder="Description">
+                <span class="error" id="userError" style="color: rgb(255, 80, 80); text-align: center;">&nbsp;</span>
+                <input type="number" id="Donation" name="Donation" placeholder="Required Donation">
+                <span class="error" id="emailError" style="color: rgb(255, 80, 80); text-align: center;"> &nbsp;</span>
+                <input type="text" id="address" name="address" placeholder="Wallet address">
+                <span class="error" id="passError" style="color: rgb(255, 80, 80); text-align: center;">&nbsp; </span>
+                <input type="date" id="LastDate" name="LastDate" placeholder="lastDate" autocomplete="none">
+                <input type="submit" name="submit" value="Register Here" onclick="login()">
+            </form>
+        </div>
     </div>
     <section class="scnd" id="scnd">
         <div class="card text-left">
@@ -39,7 +51,7 @@
                 <p class="card-text">We raised: <b>4500</b></p>
 
             </div>
-            <a href="./User/index.html">DONATE</a>
+            <a href="./User/index.html">Stop</a>
 
         </div>
         <div class="card text-left">
@@ -53,7 +65,7 @@
                 <p class="card-text">We raised: <b>3,200</b></p>
 
             </div>
-            <a href="./User/index.html">DONATE</a>
+            <a href="./User/index.html">Stop</a>
 
         </div>
         <div class=" card text-left ">
@@ -65,7 +77,7 @@
                 <p class="card-text ">We raised:<b>3,700</b></p>
 
             </div>
-            <a href="./User/index.html ">DONATE</a>
+            <a href="./User/index.html ">Stop</a>
 
         </div>
     </section>
