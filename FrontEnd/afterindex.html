@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="odometer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="./index.html">CryptoRaisers.</a></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Logout</a></li>
+                <li><a href="./donation.html">Your Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="right" id="right">
+            <div class="card">
+                <table>
+                    <tr>
+                        <td>Trinity Pvt. Ltd.</td>
+                        <td>1200.00</td>
+                    </tr>
+                    <tr>
+                        <td href="#">Donterm.</td>
+                        <td>8000.00
+                            <td>
+                    </tr>
+                    <tr>
+                        <td href="#">Cospray Pvt.</td>
+                        <td>1000.00
+                            <td>
+                    </tr>
+                    <tr>
+                        <td href="#">Gosling Marketing</td>
+                        <td>700.00
+                            <td>
+                    </tr>
+                    <tr>
+                        <td href="#">Nuine Co.</td>
+                        <td>450.00
+                            <td>
+                    </tr>
+                    <tr>
+                        <td href="#"></td>
+                        <td>
+                            <td>
+                    </tr>
+                    <tr>
+                        <td href="#"></td>
+                        <td>
+                            <td>
+                    </tr>
+                    <tr>
+                        <td href="#"></td>
+                        <td>
+                            <td>
+                    </tr>
+                    <tr>
+                        <td href="#"></td>
+                        <td>
+                            <td>
+                    </tr>
+                    <tr>
+                        <td href="#"></td>
+                        <td>
+                            <td>
+                    </tr>
+                    <tr>
+                        <td href="#"></td>
+                        <td>
+                            <td>
+                    </tr>
+                    <tr>
+                        <td href="#"></td>
+                        <td>
+                            <td>
+                    </tr>
+                    <tr>
+                        <td href="#"></td>
+                        <td>
+                            <td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="frame">
+
+            </div>
+        </div>
+        <div class="left" id="left">
+            <h1 class="textbkg">Community</h1>
+            <h1>Over&nbsp;&nbsp;<b class="count">0</b>
+                <BR>We Have Raised!
+                <BR><i>Be Part of a Community.</i></h1>
+            <div class="cta" id="cta">
+                <a href="#">DONATE NOW</a>
+            </div>
+        </div>
+    </section>
+    <section class="scnd" id="scnd">
+        <div class="card text-left">
+            <div class="frame">
+
+            </div>
+            <img class="card-img-top" src="holder.js/100px180/" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Donsec Marketing.</h4>
+                <p class="card-text">Need an Amount: <b>10,000</b></p>
+                <p class="card-text">We raised: <b>4500</b></p>
+
+            </div>
+            <a href="../organzation.html">DONATE</a>
+
+        </div>
+        <div class="card text-left">
+            <div class="frame">
+
+            </div>
+            <img class="card-img-top" src="holder.js/100px180/" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Asian Pvt. Ltd.</h4>
+                <p class="card-text">Need an Amount: <b>7,000</b></p>
+                <p class="card-text">We raised: <b>3,200</b></p>
+
+            </div>
+            <a href="../organzation.html">DONATE</a>
+
+        </div>
+        <div class="card text-left">
+            <div class="frame">
+
+            </div>
+            <img class="card-img-top" src="holder.js/100px180/" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Cooper Tyres.</h4>
+                <p class="card-text">Need an Amount: <b>5,000</b></p>
+                <p class="card-text">We raised:<b>3,700</b></p>
+
+            </div>
+            <a href="../organzation.html">DONATE</a>
+
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1>Contact</h1>
+        <h1 class="textbkg">CONTACT</h1>
+        <div class="shape">
+
+        </div>
+
+        <form>
+            <input type="text" id="userName" name="userName" placeholder="Username">
+            <input type="email" id="email" name="email" placeholder="Email address" required>
+            <input type="text" id="textarea" name="message" placeholder="Type Message..." required>
+            <input type="submit" name="submit" value="Send">
+        </form>
+        <h3>Need a Donation?&nbsp;<a href="mailto:xyz123@gmail.com">truesaversdonations@gmail.com</a></h3>
+    </section>
+
+
+    <script src="odometer.js"></script>
+    <script>
+        const subsOdometer = document.querySelector(".count");
+
+        const odometer = new Odometer({
+            el: subsOdometer,
+        });
+
+        odometer.update(14674);
+    </script>
+    <script>
+        $("#cta").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#scnd").offset().top
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

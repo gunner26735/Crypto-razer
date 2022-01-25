@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: poppins;
+}
+
+.h2 {
+  position: absolute;
+  width: 100px;
+  text-decoration: none;
+  margin: 20px 120px;
+  padding: 0px 20px;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: binjay;
+  letter-spacing: 5px;
+  cursor: pointer;
+  color: black;
+  z-index: 1;
+}
+
+.vault {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  margin-top: 20vh;
+  display: none;
+  background: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .6s;
+  transition: .6s;
+  z-index: 1;
+}
+
+.vault.active {
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.valut h1 {
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+.vault form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px;
+  width: 50%;
+}
+
+.vault form input {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: montserrat;
+  cursor: pointer;
+  border: 2px solid #1b1b1b;
+  border-radius: 5px;
+}
+
+.vault form input[type="submit"] {
+  font-weight: bold;
+  color: #fff;
+  background: #32327c;
+  border-color: #32327c;
+}
+
+.plus {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f1f1f1;
+}
+
+.plus .fa-plus {
+  font-size: 40px;
+  padding: 20px 25px 0px 25px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 2;
+}
+
+.plus .fa.active {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.plus .bg {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  height: 50px;
+  width: 50px;
+  z-index: 2;
+  border-radius: 50%;
+  background: #32327c;
+}
+
+.scnd {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+}
+
+.scnd .card {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 10px 20px;
+  height: 500px;
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.9), 10px 10px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.9), 10px 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.scnd .card h4 {
+  position: absolute;
+  top: 10%;
+  font-size: 30px;
+}
+
+.scnd .card p {
+  text-align: left;
+  font-size: 20px;
+}
+
+.scnd .card a {
+  position: absolute;
+  top: 80%;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  padding: 10px 50px;
+  border-radius: 10px;
+  background: #32327c;
+}
+
+.scnd .card .frame {
+  position: absolute;
+  height: 500px;
+  width: 400px;
+  opacity: .2;
+  background: #32327c;
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 40% 100%, 5% 94%, 5% 5%, 89% 6%, 96% 18%, 100% 100%, 100% 0%);
+          clip-path: polygon(0% 0%, 0% 100%, 40% 100%, 5% 94%, 5% 5%, 89% 6%, 96% 18%, 100% 100%, 100% 0%);
+}
+/*# sourceMappingURL=style.css.map */
