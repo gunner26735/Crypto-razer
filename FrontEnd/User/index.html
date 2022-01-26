@@ -15,13 +15,13 @@
 
 <body>
     <div class="container">
-        <h1 style="font-family:binjay;font-size:40px;"><a href="../index.html">cryptorazers.</a></h1>
-        <form name="form" id="form" action="/" method="GET">
+        <h1 style="font-family:binjay;font-size:40px;"><a href="login.php">cryptorazers.</a></h1>
+        <form name="form" id="form" action="login.php" method="GET">
             <span class="error" id="userError" style="color: rgb(255, 80, 80); text-align: center;">&nbsp;</span>
             <input type="text" id="userName" name="userName" placeholder="Username">
             <span class="error" id="emailError" style="color: rgb(255, 80, 80); text-align: center;"> &nbsp;</span>
-            <input type="email" id="email" name="email" placeholder="Email address">
-            <span class="error" id="passError" style="color: rgb(255, 80, 80); text-align: center;">&nbsp; </span>
+            <!-- <input type="email" id="email" name="email" placeholder="Email address">
+            <span class="error" id="passError" style="color: rgb(255, 80, 80); text-align: center;">&nbsp; </span>-->
             <input type="password" id="pass" name="password" placeholder="Password" autocomplete="none">
             <input type="submit" name="submit" value="Login" onclick="login()">
             <a href="./register.html">Register Here</a>
@@ -81,7 +81,7 @@
         } else {}
     });
 
-    function login() {
+    /*function login() {
         if (userName.value === 'admin') {
             if (email.value === 'admin@admin.com') {
                 if (password.value === 'admin') {
@@ -92,19 +92,19 @@
         if (userName.value === 'user1') {
             if (email.value === 'user1@user1.com') {
                 if (password.value === 'user1') {
-                    window.location.href = "../afterindex.html";
+                    window.location.href = "../afterindex.php";
                 }
             }
         }
         if (userName.value === 'user2') {
             if (email.value === 'user2@user2.com') {
                 if (password.value === 'user2') {
-                    window.location.href = "../afterindex.html";
+                    window.location.href = "../afterindex.php";
                 }
             }
         }
 
-    }
+    }*/
 </script>
 
 </html>

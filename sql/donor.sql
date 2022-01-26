@@ -24,45 +24,46 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `supporting_orgs`
+-- Table structure for table `donor`
 --
 
-CREATE TABLE `supporting_orgs` (
-  `Donor_Id` int(11) NOT NULL,
-  `Org_Name` text NOT NULL,
-  `Id` int(11) NOT NULL
+CREATE TABLE `donor` (
+  `Name` text NOT NULL,
+  `Wallet_Address` varchar(64) NOT NULL,
+  `Donated_Amount` int(11) NOT NULL,
+  `Date` date NOT NULL,
+  `ID` int(11) NOT NULL,
+  `Description` varchar(30) NOT NULL,
+  `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `donor`
+--
+
+INSERT INTO `donor` (`Name`, `Wallet_Address`, `Donated_Amount`, `Date`, `ID`, `Description`, `password`) VALUES
+('crypto', '0xb1a0787780Da376C8e2AfD057c1daE82430A1662', 0, '0000-00-00', 1, 'I want to become donor king!', ''),
+('user1', '', 0, '2022-01-26', 2, 'I will be a Donor King....', 'user1');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `supporting_orgs`
+-- Indexes for table `donor`
 --
-ALTER TABLE `supporting_orgs`
-  ADD PRIMARY KEY (`Id`),
-  ADD KEY `donor_id_fk` (`Donor_Id`);
+ALTER TABLE `donor`
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `supporting_orgs`
+-- AUTO_INCREMENT for table `donor`
 --
-ALTER TABLE `supporting_orgs`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `supporting_orgs`
---
-ALTER TABLE `supporting_orgs`
-  ADD CONSTRAINT `donor_id_fk` FOREIGN KEY (`Donor_Id`) REFERENCES `donor` (`ID`);
+ALTER TABLE `donor`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
